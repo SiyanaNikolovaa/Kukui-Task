@@ -1,0 +1,528 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  color: black;
+  z-index: 5;
+  padding: 0;
+  margin: 0;
+}
+
+/*HEADER*/
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+}
+
+.header-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logo-img img {
+  width: 150px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.header-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.phone-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-btn {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.text-small {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.star {
+  color: rgba(226, 226, 43, 0.885);
+}
+
+/*Navbar*/
+
+.navbar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  border-top: 1px solid #000000;
+  padding: 15px;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.hero-page {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/car.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-page-title {
+  color: #ffffff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-page-logo {
+  color: #ffffff;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 27px;
+}
+
+.hero-page button {
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #000000;
+}
+
+.hero-btn button {
+  transition: all 0.7s ease-in-out;
+}
+
+.hero-btn :hover {
+  transform: scale(1.5);
+}
+
+/*Welcome*/
+
+.welcome-page {
+  width: 100%;
+  height: 600px;
+  margin: 50px 0;
+  display: flex;
+}
+
+.image-section {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin-left: 2rem;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  border-image: fill;
+}
+
+.red-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: red;
+  z-index: -1;
+}
+
+.img-ad {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img-ad img {
+  width: 90px;
+  margin-right: 100px;
+}
+
+.img-ad button {
+  width: 150px;
+  height: fit-content;
+  background-color: rgb(87, 10, 10);
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.text-area {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 25px;
+}
+
+.text-area h2,
+h1 {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+/* SERVICES */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  height: 650px;
+  background-color: rgb(40, 40, 147);
+}
+
+.services-title {
+  font-family: "Nunito Sans";
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+.services-images {
+  display: flex;
+  gap: 50px;
+}
+
+.service-image-text {
+  font-family: "Nunito Sans";
+  background-color: white;
+  padding: 20px 0;
+  text-align: center;
+  color: rgb(34, 34, 164);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.image-container img {
+  display: block;
+  width: 250px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.image-container {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.services-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.services-buttons button {
+  border: 1px solid #ffffff;
+  font-family: "Nunito Sans";
+  width: 200px;
+  border-radius: 7px;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.service-btn-view {
+  background-color: white;
+  color: rgb(54, 54, 162);
+}
+
+.service-btn-appointment {
+  color: #ffffff;
+  background-color: rgb(40, 40, 147);
+}
+
+/*Reviews*/
+
+.reviews {
+  width: 100%;
+  display: flex;
+  padding: 25px;
+  gap: 60px;
+}
+
+.reviews-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+
+.reviews-buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.reviews-title {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews-title i {
+  color: red;
+  font-size: 60px;
+}
+
+.reviews-image {
+  border-radius: 20px;
+}
+
+.reviews-image img {
+  width: 420px;
+  height: 450px;
+  object-fit: fill;
+}
+
+.fa-star {
+  color: rgba(226, 226, 43, 0.885);
+}
+
+.reviews-name {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.fa-less-than {
+  font-size: 20px;
+}
+
+.fa-greater-than {
+  color: red;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.leave-btn {
+  width: 180px;
+  height: 45px;
+  border-radius: 500px;
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.view-btn {
+  width: 180px;
+  height: 45px;
+  border-radius: 500px;
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.amenties {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  gap: 60px;
+}
+
+.sca-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 52.5px;
+}
+
+.amenties i {
+  margin-top: 20px;
+  color: red;
+}
+
+.our-a-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 39px;
+  line-height: 52.5px;
+  font-family: "Montserrat";
+}
+
+.amenties-icons i {
+  color: rgb(2, 50, 50);
+  margin-top: 20px;
+  text-align: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.service-center-amenities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Inter" sans-serif;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.service-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-icon-item i {
+  font-size: 30px;
+  padding: 10px;
+}
+
+.sca-title h3 {
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+.our-amenities {
+  padding: 40px;
+}
+
+.our-amenities i {
+  color: rgb(68, 68, 164);
+}
+
+.our-a-title {
+  margin-bottom: 30px;
+}
+
+.service-center-title {
+  color: rgb(57, 117, 57);
+  font-family: "Poppins";
+  font-size: 39px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-center-amenities {
+  padding: 30px;
+}
+
+.service-center-amenities i {
+  color: rgb(57, 117, 57);
+}
+
+.vehicles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 35px;
+}
+
+.vehicles-title {
+  font-family: "Nunito Sans";
+  text-align: center;
+  font-size: 39px;
+  color: rgb(73, 73, 152);
+  font-weight: bold;
+}
+
+.vehicles-types span {
+  font-weight: bold;
+  padding: 0 20px;
+  border-right: 1px solid #000000;
+}
+
+.vehicles-types span:last-of-type {
+  border: none;
+}
+
+.vehicles-image-container {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+}
+
+.vehicles-image-container img {
+  display: block;
+  border-radius: 15px;
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.vehicles-btn {
+  width: 250px;
+  color: #ffffff;
+  background-color: rgb(73, 73, 152);
+  border: none;
+  text-transform: uppercase;
+  border-radius: 7px;
+  padding: 10px 0;
+}
